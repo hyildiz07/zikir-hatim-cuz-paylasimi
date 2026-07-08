@@ -1,0 +1,33 @@
+ELIFA ZİKİRMATİK + BİRLİKTE — Netlify Kurulum Notu
+====================================================
+
+YENİ NE VAR
+- 4. sekme "Birlikte": Hatim/Cüz Paylaşımı + Ortak Niyet (Toplu Zikir)
+- Link sistemi: ?k=KOD katılım linki, ?y=KOD yönetici linki
+- WhatsApp paylaşım ve hatırlatma mesajı üretimi
+- Rapor görseli (PNG) — "Allah kabul etsin" belgesi
+- Ortak veri: netlify/functions/org.mjs (Netlify Blobs)
+
+NETLİFY'A YÜKLEME
+1) Bu klasörün TAMAMINI (netlify klasörü, netlify.toml ve
+   package.json dahil) Netlify'a sürükleyip bırakın ya da
+   Git deposuna bağlayın.
+2) Başka hiçbir ayar gerekmez. Fonksiyon otomatik kurulur,
+   ortak veri Netlify Blobs'ta saklanır (ücretsiz katmanda çalışır).
+3) Yükledikten sonra siteyi açın, Birlikte sekmesinden bir hatim
+   oluşturun; çıkan katılım linkini BAŞKA BİR TELEFONDA açarak
+   ortak verinin çalıştığını doğrulayın.
+
+ÖNEMLİ
+- Sayfayı dosya olarak (file://) ya da fonksiyonsuz bir sunucuda
+  açarsanız üstte "çevrimdışı önizleme" uyarısı çıkar; linkler o
+  modda yalnızca aynı cihazda çalışır. Netlify'da bu uyarı görünmez.
+- Service worker sürümü v8'e yükseltildi; kullanıcılar yeni sürümü
+  ilk açılışta otomatik alır (TWA'ya yeni AAB gerekmez).
+- Play Store görünen adını değiştirirseniz manifest.json içindeki
+  name/short_name alanlarını da güncellemeyi unutmayın.
+
+GİZLİLİK KURALLARI (kodda uygulandı)
+- Hatimde kim hangi cüzü aldı açıktır (görev kaydı).
+- Toplu zikirde kişi başı sayı SUNUCUDAN DAHİ dışarı verilmez;
+  yalnızca toplam ve katılan isimleri döner.

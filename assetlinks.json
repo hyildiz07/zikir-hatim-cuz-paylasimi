@@ -1,0 +1,11 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.elifaplatform.zikirmatik.twa",
+    "sha256_cert_fingerprints": [
+      "E0:14:EB:DC:70:48:04:89:C6:24:09:E7:07:1D:36:40:DD:C2:17:14:C2:48:50:25:CB:84:B3:0E:D7:35:83:80",
+      "95:3B:DC:6E:04:72:FF:33:09:8A:FF:68:29:DA:48:16:E2:AD:D4:AF:D5:13:56:27:78:F4:9F:76:3E:95:20:56"
+    ]
+  }
+}]

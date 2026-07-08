@@ -1,34 +1,51 @@
 # Zikir, Hatim & Cüz Paylaşımı
 
-ELIFA Platform için geliştirilen zikir takibi, hatim organizasyonu ve cüz paylaşımı PWA/TWA uygulaması.
+Public-safe GitHub/Netlify paketi.
 
-Bu public-safe sürümde signing key, AAB, APK veya gizli dosya bulunmaz.
+Bu paket, ELIFA Platform'un **Zikir, Hatim & Cüz Paylaşımı** uygulamasının GitHub'a yüklenebilir temiz sürümüdür.
 
-## Özellikler
+## Ürün bilgileri
 
-- Dijital zikirmatik
-- Hatim organizasyonu
-- Cüz paylaşımı
-- Toplu niyet / katılım sistemi
-- Mobil uyumlu PWA yapısı
-- Netlify Functions desteği
+| Alan | Değer |
+| --- | --- |
+| Play Store adı | `Zikir, Hatim & Cüz Paylaşımı` |
+| Android package | `com.elifaplatform.zikirmatik.twa` |
+| Platform | PWA + TWA |
+| Yayın hedefi | Netlify + Google Play |
 
-## Güvenlik
+## İçerik
 
-Bu repoya kesinlikle şu dosyalar yüklenmez:
+- `index.html`
+- `gizlilik.html`
+- `manifest.json`
+- `service-worker.js`
+- `assetlinks.json`
+- `.well-known/assetlinks.json`
+- `netlify/functions/org.mjs`
+- ikon dosyaları
+- Netlify yapılandırması
+
+## Netlify
 
 ```text
-*.keystore
-*.jks
+Build command: boş
+Publish directory: .
+Functions directory: netlify/functions
+```
+
+## GitHub'a konmayacak dosyalar
+
+```text
+signing.keystore
+signing-key-info.txt
 *.aab
 *.apk
-signing-key-info.txt
+*.keystore
+*.jks
 keystore-base64.txt
 .env
 ```
 
-## Platform
+## Güvenlik
 
-- Web/PWA: Netlify
-- Android: TWA / Google Play
-- Ürün ailesi: ELIFA Platform
+Bu paket signing key, keystore, Play Store AAB/APK veya şifre dosyası içermez. Play Store release dosyaları Drive/kasa içinde tutulmalıdır.
