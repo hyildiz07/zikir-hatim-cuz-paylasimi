@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+.netlify/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Android / signing / release artifacts
+*.keystore
+*.jks
+*.p12
+*.pem
+*.aab
+*.apk
+keystore-base64.txt
+signing-key-info.txt
+signing.keystore
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
